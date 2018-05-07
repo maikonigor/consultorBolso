@@ -1,0 +1,8 @@
+{
+  "name": "consultorBolso",
+  "app_id": "1834249913550566",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

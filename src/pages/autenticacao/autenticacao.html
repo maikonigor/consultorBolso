@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        Login
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content padding>
+      <div class="wrapper fadeInDown">
+          <div id="formContent">
+            <!-- Tabs Titles -->
+            <h2 class="active"> Login </h2>
+            <h2></h2>
+        
+            <!-- Icon -->
+            <div class="fadeIn first">
+              <img src="assets/imgs/login-image.png" id="icon" alt="User Icon" />
+            </div>
+        
+            <!-- Login Form -->
+            <form>
+              <input type="text" id="login" class="fadeIn second" name="login" placeholder="Email">
+              <input type="text" id="password" class="fadeIn third" name="login" placeholder="Senha">
+              <input type="submit" class="fadeIn fourth" value="Entrar">
+              <button ion-button full icon-left (click)='loginFacebook();'>
+                  <ion-icon name="logo-facebook" class="fadeIn fourth"></ion-icon>Login com Facebook
+              </button>
+              <button ion-button block color="danger" (click)="loginGoogle()">
+                <ion-icon name="logo-googleplus"></ion-icon>
+                Login com Google
+              </button>
+            </form>
+        
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+              <a class="underlineHover" href="#">Esqueceu a senha?</a>
+            </div>
+        
+          </div>
+        </div>
+    </ion-content>
+    
