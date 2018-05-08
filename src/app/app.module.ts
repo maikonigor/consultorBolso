@@ -5,15 +5,21 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
+
+import { Facebook } from '@ionic-native/facebook';
+import { Camera } from '@ionic-native/camera';
+
+/* pages */
 import { HomePage } from '../pages/home/home';
 import { AutenticacaoPage } from '../pages/autenticacao/autenticacao';
-import { Facebook } from '@ionic-native/facebook';
-
+import { CadastroPage } from '../pages/cadastro/cadastro';
+import { AuthProvider } from '../providers/auth/auth';
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    AutenticacaoPage
+    AutenticacaoPage,
+    CadastroPage
   ],
   imports: [
     BrowserModule,
@@ -23,9 +29,12 @@ import { Facebook } from '@ionic-native/facebook';
   entryComponents: [
     MyApp,
     HomePage,
-    AutenticacaoPage
+    AutenticacaoPage,
+    CadastroPage
   ],
   providers: [
+    AuthProvider,
+    Camera,
     Facebook,
     StatusBar,
     SplashScreen,

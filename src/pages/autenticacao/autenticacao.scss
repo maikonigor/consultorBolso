@@ -1,5 +1,5 @@
 page-autenticacao {
-background: image('assets/imgs/background-login.jpg');
+display: block;
 }
 
 ion-content{
@@ -11,11 +11,14 @@ ion-content{
 
 html {
   background-color: #56baed;
+  
 }
 
 body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
+  background-image: url('assets/imgs/background-login.jpg');
+  
 }
 
 a {
@@ -38,7 +41,9 @@ h2 {
 
 
 /* STRUCTURE */
-
+.content{
+  background: url('../assets/imgs/background-login.jpg');
+}
 .wrapper {
   display: flex;
   align-items: center;
@@ -80,6 +85,9 @@ h2.inactive {
   color: #f3e309;
 }
 
+h2.inactive:active{
+  color: #9b9a8b;
+}
 h2.active {
   color: #f3e309;
   border-bottom: 2px solid #5fbae9;

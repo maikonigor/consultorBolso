@@ -1,0 +1,51 @@
+
+<ion-header>
+
+  <!-- <ion-navbar>
+    <ion-title>cadastro</ion-title>
+  </ion-navbar> -->
+
+</ion-header>
+
+
+<ion-content padding class="content">
+
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 (click)="backToLogin()"  class="inactive"> Login </h2>
+      <h2 class="active">Registro</h2>
+
+      <!-- Avatar image -->
+      <ion-avatar item-end (click)="presentActionSheet()">
+          <img [src]="avatarSrc">
+      </ion-avatar>
+        <ion-list>
+          <ion-item>
+              <ion-label floating >Nome</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            
+          <ion-item>
+            <ion-label floating>Email</ion-label>
+            <ion-input type="email"></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input type="password"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label floating>Repetir Senha</ion-label>
+              <ion-input type="password"></ion-input>
+        </ion-item>
+          </ion-list>
+        <button ion-button full icon-left (click)='salvar();'>
+          <ion-icon name="archive" class="fadeIn fourth"></ion-icon>
+          Cadastrar
+        </button>
+    </div>
+  </div>
+
+</ion-content>

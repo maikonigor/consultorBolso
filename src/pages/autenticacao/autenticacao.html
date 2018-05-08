@@ -1,23 +1,23 @@
 <ion-header>
-    <ion-navbar>
+    <!-- <ion-navbar>
       <ion-title>
         Login
       </ion-title>
-    </ion-navbar>
+    </ion-navbar> -->
   </ion-header>
-  <ion-content padding>
+  <ion-content padding class="content">
       <div class="wrapper fadeInDown">
           <div id="formContent">
             <!-- Tabs Titles -->
             <h2 class="active"> Login </h2>
-            <h2></h2>
+            <h2 (click)="registroClick()" class="inactive">Registo</h2>
         
             <!-- Icon -->
             <div class="fadeIn first">
               <img src="assets/imgs/login-image.png" id="icon" alt="User Icon" />
             </div>
         
-            <!-- Login Form -->
+            
             <form>
               <input type="text" id="login" class="fadeIn second" name="login" placeholder="Email">
               <input type="text" id="password" class="fadeIn third" name="login" placeholder="Senha">
