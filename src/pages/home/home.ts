@@ -10,7 +10,7 @@ import {Usuario} from '../../model/usuario.model';
 })
 export class HomePage {
 
-  // public nome:Usuario = this.authProvider.getUsuario();
+  public usuario:Usuario = this.authProvider.getUsuario();
 
   constructor(public navCtrl: NavController, public authProvider: AuthProvider) {
       
