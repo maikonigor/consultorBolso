@@ -14,6 +14,7 @@ import { HomePage } from '../pages/home/home';
 import { AutenticacaoPage } from '../pages/autenticacao/autenticacao';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { AuthProvider } from '../providers/auth/auth';
+import { SwingModule } from 'angular2-swing';
 @NgModule({
   declarations: [
     MyApp,
@@ -23,6 +24,7 @@ import { AuthProvider } from '../providers/auth/auth';
   ],
   imports: [
     BrowserModule,
+    SwingModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

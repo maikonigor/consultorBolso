@@ -9,6 +9,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {Usuario} from '../../model/usuario.model';
 
 import {CadastroPage} from '../cadastro/cadastro';
+import { HomePage } from '../home/home';
 
 
 
@@ -40,6 +41,10 @@ loginFacebook() {
 }
   ionViewDidLoad() {
     console.log('ionViewDidLoad AutenticacaoPage');
+  }
+
+  entrar(){
+    this.navCtrl.push(HomePage);
   }
 
 }
